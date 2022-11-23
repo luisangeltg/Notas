@@ -59,6 +59,7 @@ struct Home: View {
                 trailing: Button(action: {
                     model.nota = ""
                     model.fecha = Date()
+                    model.updateItem = nil
                     model.show.toggle()
                 }) {
                     Image(systemName: "plus").font(.title).foregroundColor(.blue)
